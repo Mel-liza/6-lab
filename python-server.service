@@ -1,0 +1,14 @@
+[Unit]
+Description=Python Lab 5 Web Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/mnt/c/Users/Acer/lab5-python-project
+ExecStart=/usr/bin/python3 /mnt/c/Users/Acer/lab5-python-project/main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
+
